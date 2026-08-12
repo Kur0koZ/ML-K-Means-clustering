@@ -1,3 +1,12 @@
+# run_kmeans.py
+
+# wcss = within-cluster sum of sqaure : ยิ่งทำควรยิ่งต่ำจนคงที่ไป
+# เหมือนตัววัดประสิทธิภาพ
+
+# iteration: 5
+# label: [0 0 0 0 0 0 0 0 0 1]
+# wcss: 708495.1111111111
+
 import numpy as np
        # x,y,r,g,b
 data = [[193,131,226,243,242], 
@@ -42,4 +51,3 @@ for it in range(iter):
     print("Iteration ",it)
     print("Labels:", labels)
     print("WCSS:", wcss)
-print("WCSS:", wcss)
